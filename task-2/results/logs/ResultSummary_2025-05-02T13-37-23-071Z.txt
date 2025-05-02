@@ -1,0 +1,21 @@
+     █ page_1 - https://k6.io/
+
+     █ page_2 - https://grafana.com/docs/k6/latest
+
+     data_received..................: 303 MB 2.2 MB/s
+     data_sent......................: 6.0 MB 43 kB/s
+     group_duration.................: avg=15.56s   min=12.51s   med=14.75s   max=25.09s   p(90)=20.54s   p(95)=20.84s  
+     http_req_blocked...............: avg=25.28ms  min=0s       med=0s       max=1.51s    p(90)=0s       p(95)=317.28ms
+     http_req_connecting............: avg=9.87ms   min=0s       med=0s       max=1.14s    p(90)=0s       p(95)=105.63ms
+   ✓ http_req_duration..............: avg=206.91ms min=104.32ms med=177.51ms max=1.74s    p(90)=289.95ms p(95)=318.52ms
+       { expected_response:true }...: avg=209.81ms min=104.47ms med=222.25ms max=1.74s    p(90)=289.84ms p(95)=318.48ms
+     http_req_failed................: 6.71%  ✓ 585       ✗ 8125
+     http_req_receiving.............: avg=12.5ms   min=0s       med=446.5µs  max=1.6s     p(90)=20.39ms  p(95)=54.32ms 
+     http_req_sending...............: avg=19.48µs  min=0s       med=0s       max=2.11ms   p(90)=0s       p(95)=27.17µs 
+     http_req_tls_handshaking.......: avg=15.02ms  min=0s       med=0s       max=337.55ms p(90)=0s       p(95)=162.84ms
+     http_req_waiting...............: avg=194.39ms min=104.32ms med=148.54ms max=894.89ms p(90)=280.13ms p(95)=287.78ms
+     http_reqs......................: 8710   62.632589/s
+     iteration_duration.............: avg=33.16s   min=29.25s   med=31.43s   max=41.81s   p(90)=37.75s   p(95)=38.15s  
+     iterations.....................: 64     0.460216/s
+     vus............................: 2      min=1       max=20
+     vus_max........................: 20     min=20      max=20
