@@ -13,7 +13,7 @@ export const options = {
 
 export function setup() {
   return {
-    apiUrl: "https://official-joke-api.appspot.com/random_joke",
+    apiUrl: "https://jsonplaceholder.typicode.com/todos/1",
     headers: {
       "Content-Type": "application/json",
     },
@@ -29,9 +29,5 @@ export default function (data) {
   check(response, {
     "Status is 200": (r) => r.status === 200,
     "Response time < 200ms": (r) => r.timings.duration < 200,
-    "Response contains joke data": (r) =>
-      r.json() && r.json().setup && r.json().punchline,
   });
-
-  console.log("Response time: ", response.timings.duration, "ms");
 }
